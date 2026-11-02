@@ -14,7 +14,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/courses/:slug" element={<CourseDetail />} />
           <Route path="/category/:category" element={<Category />} />
-          {/* Catch-all route for invalid URLs */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

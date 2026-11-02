@@ -5,10 +5,8 @@ function CourseDetail() {
   const { slug } = useParams()
   const navigate = useNavigate()
 
-  // Find the course that matches the URL slug
   const course = courses.find(c => c.slug === slug)
 
-  // If no course is found, show the error message
   if (!course) {
     return (
       <div className="not-found">
@@ -36,7 +34,6 @@ function CourseDetail() {
       
       <h3>Topics Covered:</h3>
       <ul className="topics-list">
-        {/* Assuming topics is an array in your data */}
         {course.topics && course.topics.map((topic, index) => (
           <li key={index}>{topic}</li>
         ))}
