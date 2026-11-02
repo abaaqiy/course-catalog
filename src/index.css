@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f8fafc; /* Light grayish-blue background */
+  background-color: #f8fafc;
   color: #1e293b;
 }
 
@@ -18,24 +18,24 @@ body {
   padding: 0 20px 60px 20px;
 }
 
-/* --- NAVBAR --- */
 .navbar {
   display: flex;
   align-items: center;
   padding: 24px 0;
   margin-bottom: 40px;
   gap: 40px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .logo {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
   color: #0f172a;
 }
 
 .logo-tj {
-  color: #4f46e5; /* Purple accent */
+  color: #6366f1;
 }
 
 .nav-links {
@@ -57,21 +57,19 @@ body {
   color: #0f172a;
 }
 
-/* The purple box for active link */
 .nav-link.active {
   color: #4f46e5;
   background-color: #e0e7ff;
   font-weight: 600;
 }
 
-/* --- HERO SECTION --- */
 .hero-section {
   margin-bottom: 60px;
   max-width: 600px;
 }
 
 .hero-subtitle {
-  color: #4f46e5;
+  color: #6366f1;
   font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -92,7 +90,6 @@ body {
   line-height: 1.6;
 }
 
-/* --- COURSE GRID & HEADER --- */
 .courses-header {
   margin-bottom: 24px;
 }
@@ -113,7 +110,6 @@ body {
   gap: 24px;
 }
 
-/* --- COURSE CARD --- */
 .course-card {
   background: white;
   border-radius: 12px;
@@ -132,7 +128,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Badges */
 .badge {
   align-self: flex-start;
   padding: 4px 10px;
@@ -143,12 +138,12 @@ body {
 }
 
 .badge-beginner {
-  background-color: #dcfce7; /* Light green */
+  background-color: #dcfce7;
   color: #16a34a;
 }
 
 .badge-intermediate {
-  background-color: #e0e7ff; /* Light purple */
+  background-color: #e0e7ff;
   color: #4f46e5;
 }
 
@@ -169,11 +164,147 @@ body {
 }
 
 .card-link {
-  margin-top: auto; /* Pushes link to the bottom */
-  color: #4f46e5;
+  margin-top: auto;
+  color: #6366f1;
   font-weight: 600;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.course-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #0f172a;
+}
+
+.detail-header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 30px;
+}
+
+.detail-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 16px 0;
+  line-height: 1.2;
+}
+
+.detail-duration {
+  color: #64748b;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.detail-section {
+  margin-bottom: 40px;
+}
+
+.detail-section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.detail-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.topics-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.topics-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.topics-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.not-found-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px; 
+  padding-bottom: 80px;
+}
+
+.not-found-code {
+  font-size: 7rem;
+  font-weight: 800;
+  color: #e2e8f0; 
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.not-found-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.not-found-desc {
+  color: #64748b;
+  max-width: 450px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-size: 1rem;
+}
+
+.not-found-btn {
+  background-color: #6366f1; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.not-found-btn:hover {
+  background-color: #4f46e5; 
 }
